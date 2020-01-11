@@ -1,0 +1,55 @@
+.section {
+  width: 100%;
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 0 1rem;
+}
+
+.section_dark {
+  background-color: black;
+}
+
+.section_iphone-xs {
+  padding-top: 92px;
+  padding-bottom: 40px;
+}
+
+.section__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 960px;
+  width: 100%;
+}
+
+.section__image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.section__image_iphone-xs {
+  height: 300px;
+  width: 100%;
+  background-image: url(../assets/iph-xs_1.jpg);
+}
+
+@media (max-width: 768px) {
+  .section__image_iphone-xs {
+    height: 500px;
+    width: 100%;
+    background-image: url(../assets/iph-xs_2.jpg);
+  }
+}
+/*# sourceMappingURL=section.css.map */

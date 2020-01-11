@@ -1,0 +1,11 @@
+@mixin flex-center-horizontal {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin tablet {
+    @media (max-width: 768px){
+        @content
+    }
+
+}
