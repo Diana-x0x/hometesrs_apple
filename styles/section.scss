@@ -7,36 +7,61 @@
   @include flex-center-horizontal;
   align-items: stretch;
   padding: 0 1rem;
-
   &_dark {
     background-color: rgb(0, 0, 0);
   }
-  
-
   &_iphone-xs {
     padding-top: 92px;
     padding-bottom: 40px;
   }
-
   &__content {
     @include flex-center-horizontal;
     max-width: $page-content-width;
     width: 100%;
+    max-width: $page-content-width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__image {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
-
     &_iphone-xs {
       height: 300px;
       width: 100%;
       background-image: url(../assets/iph-xs_1.jpg);
+      margin-top: 2rem;
       @include tablet {
         height: 500px;
         width: 100%;
         background-image: url(../assets/iph-xs_2.jpg);
       }
+    }
+  }
+}
+
+.description {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  * > {
+    margin-top: 2rem;
+  }
+  &__links {
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    color: $link-color;
+    position: relative;
+    display: flex;
+    font-size: 1.73rem;
+    margin: 0 2rem;
+    &:after {
+      content: ">";
+      position: absolute;
+      right: 0;
+      transform: translateX(100%);
     }
   }
 }
